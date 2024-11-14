@@ -1,0 +1,63 @@
+$input-color: rgb(0, 8, 255);
+$input-line: red;
+$background-btn: rgb(118, 18, 18);
+$background-btn-hover: rgb(236, 8, 8);
+$head-list: rgb(231, 146, 146);
+$background-list: rgb(242, 244, 246);
+$background-all: #d3d3d3;
+.container {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+  background-color: $background-all;
+  .card {
+    border: none;
+    display: flex;
+    background-color: rgba(162, 168, 181, 0.007);
+    .label {
+      .form-group {
+        label {
+          color: $input-color;
+          font-weight: 500;
+          font-size: 18px;
+          padding-bottom: 5px;
+        }
+
+        padding: 15px;
+        border-top: 1px solid $input-line;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .form-control {
+          display: inline;
+          width: 400px;
+        }
+      }
+      .btn {
+        padding: 5px 20px;
+        background-color: $background-btn;
+        border: none;
+        &:hover {
+          background-color: $background-btn-hover;
+        }
+      }
+    }
+  }
+
+  .mt-5 {
+    .table {
+      tr {
+        th {
+          background-color: $head-list;
+        }
+      }
+      .tb {
+        td {
+          background-color: $background-list;
+        }
+      }
+    }
+  }
+}

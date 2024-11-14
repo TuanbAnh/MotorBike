@@ -1,0 +1,83 @@
+.main {
+  height: 97vh;
+  background-image: url("https://storage.timviec365.vn/timviec365/pictures/images_06_2020/doi-tuong-hoc-nghe-sua-chua-xe-may(1).jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  .form {
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    padding: 10px 15px;
+    --bg-light: #f4eaea; // font btn
+    --bg-dark: #1a2b4b; // bg btn
+    --clr: #000000; // font
+    --clr-alpha: #fde4e467; //text
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 350px;
+    background-color: #ffffff54;
+
+    border: 1px solid #ffffff83;
+    border-radius: 10px;
+    .input-span {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+
+      .label {
+        align-self: flex-start;
+        color: var(--clr);
+        font-weight: 600;
+      }
+
+      input[type="email"],
+      input[type="password"] {
+        border-radius: 0.5rem;
+        padding: 1rem 0.75rem;
+        border: none;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background-color: var(--clr-alpha);
+        outline: 2px solid var(--bg-dark);
+
+        &:focus {
+          outline: 2px solid var(--clr);
+        }
+      }
+    }
+
+    .submit {
+      padding: 1rem 0.75rem;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      border-radius: 3rem;
+      background-color: var(--bg-dark);
+      color: var(--bg-light);
+      border: none;
+      cursor: pointer;
+      transition: all 300ms;
+      font-weight: 600;
+      font-size: 0.9rem;
+
+      &:hover {
+        background-color: var(--clr);
+        color: white;
+      }
+    }
+    .span {
+      text-decoration: none;
+      color: var(--bg-dark);
+
+      a {
+        color: var(--clr);
+      }
+    }
+  }
+}

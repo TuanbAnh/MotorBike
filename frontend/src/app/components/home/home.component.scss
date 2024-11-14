@@ -1,0 +1,103 @@
+$background-body-nav: rgb(255, 255, 255);
+
+.main {
+  .header {
+    .title {
+      display: flex;
+      border: 1px solid #ff0505;
+      justify-content: space-between;
+      .title-img1 {
+        width: 250px;
+        height: 70px;
+        margin-left: 40px;
+      }
+
+      .title-list {
+        color: rgb(8, 43, 240);
+        text-shadow: 0px 0px 3px red;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 0 10px;
+        font-size: 20px;
+      }
+    }
+
+    .nav {
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      color: white;
+
+      .nav-left {
+        align-items: center;
+        flex-grow: 2;
+        border: 1px solid #000;
+        display: flex;
+        justify-content: space-around;
+        font-size: 18px;
+        background-color: red;
+        border-top-right-radius: 20px;
+        border-bottom-left-radius: 20px;
+      }
+      .nav-right {
+        border-top-left-radius: 5px;
+        padding: 8px 10px;
+        flex-grow: 3;
+        background-color: #3e3838;
+        margin-top: 10px;
+        display: flex;
+
+        .item-right {
+          padding: 0 20px;
+          font-size: 20px;
+          font-weight: 600;
+        }
+      }
+    }
+  }
+
+  .body {
+    .body-header {
+      background-color: #e6e3e3;
+      display: flex;
+      padding: 15px 25px;
+      .boydy-btn {
+        padding: 0px 20px;
+        font-size: 20px;
+        font-weight: 600;
+        border-right: 1px solid black;
+        cursor: pointer;
+
+        position: relative;
+
+        ul {
+          display: none;
+          .body-head-li {
+            list-style: none;
+            font-size: 15px;
+            padding: 10px 0px;
+            margin-left: -30px;
+            width: 100px;
+            background-color: #e6e3e3;
+
+            &:hover {
+              background-color: rgb(219, 99, 99);
+            }
+          }
+        }
+        &:hover ul {
+          position: absolute;
+          top: 10;
+          display: block;
+          border-right: none;
+          z-index: 1;
+        }
+      }
+    }
+  }
+
+  .body-main {
+    height: 71vh;
+  }
+}

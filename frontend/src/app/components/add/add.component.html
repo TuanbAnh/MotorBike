@@ -1,0 +1,140 @@
+<div class="container mt-4">
+  <div class="card">
+    <h1>Nhập thông tin</h1>
+
+    <form class="label">
+      <div class="form-group">
+        <label> Biển kiểm soát</label>
+        <input
+          type="text"
+          [(ngModel)]="bienxe"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="bienxe"
+          placeholder="..."
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Màu Biển</label>
+        <input
+          type="text"
+          [(ngModel)]="maubien"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="maubien"
+          placeholder="..."
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Loại xe</label>
+        <input
+          type="text"
+          [(ngModel)]="loaixe"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="loaixe"
+          placeholder="..."
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Bảo dưỡng</label>
+        <input
+          type="text"
+          [(ngModel)]="baoduong"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="baoduong"
+          placeholder="..."
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Chủ xe</label>
+        <input
+          type="text"
+          [(ngModel)]="chuxe"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="chuxe"
+          placeholder="..."
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Ngày vào</label>
+        <input
+          type="text"
+          [(ngModel)]="ngayvao"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="ngayvao"
+          placeholder="..."
+        />
+      </div>
+
+      <div class="form-group">
+        <label>Ngày ra</label>
+        <input
+          type="text"
+          [(ngModel)]="ngayra"
+          [ngModelOptions]="{ standalone: true }"
+          class="form-control"
+          id="ngayra"
+          placeholder="..."
+        />
+      </div>
+
+      <button type="submit" class="btn btn-primary mt-4" (click)="save()">
+        Save
+      </button>
+    </form>
+  </div>
+
+  <div class="container mt-5">
+    <h1>Danh sách</h1>
+    <table class="table">
+      <thead class="th">
+        <h1 *ngIf="!isResultLoaded">Đang tải.................</h1>
+        <tr>
+          <th scope="col">Biển Kiểm Soát</th>
+          <th scope="col">Màu Biển</th>
+          <th scope="col">Loại Phương Tiện</th>
+          <th scope="col">Bảo Trì</th>
+          <th scope="col">Chủ Xe</th>
+          <th scope="col">Ngày Vào</th>
+          <th scope="col">Ngày Ra</th>
+        </tr>
+      </thead>
+      <tbody class="tb">
+        <tr *ngFor="let StudentItem of StudentArray">
+          <td>{{ StudentItem.bienxe }}</td>
+          <td>{{ StudentItem.maubien }}</td>
+          <td>{{ StudentItem.loaixe }}</td>
+          <td>{{ StudentItem.baoduong }}</td>
+          <td>{{ StudentItem.chuxe }}</td>
+          <td>{{ StudentItem.ngayvao }}</td>
+          <td>{{ StudentItem.ngayra }}</td>
+          <td>
+            <button
+              type="button"
+              class="btn btn-success"
+              (click)="setUpdate(StudentItem)"
+            >
+              Edit
+            </button>
+            <button
+              type="button"
+              class="btn btn-danger"
+              (click)="setDelete(StudentItem)"
+            >
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

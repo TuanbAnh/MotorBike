@@ -1,0 +1,72 @@
+<div class="main">
+  <div class="header">
+    <div class="title">
+      <img class="title-img1" src="/assets/logo.png" alt="" />
+      <div class="title-list">
+        <div class="item">My Honda+</div>
+        <div class="item">Bán hàng doanh nghiệp</div>
+        <div class="item">Câu hỏi thường gặp</div>
+        <div class="item">Liên hệ</div>
+        <div class="item">Tuyển dụng</div>
+      </div>
+    </div>
+
+    <div class="nav">
+      <div class="nav-left">
+        <div class="item-left">Ô tô</div>
+        <div class="item-left">Xe máy</div>
+        <div class="item-left">An toàn giao thông</div>
+        <div class="item-left">Đua xe thể thao</div>
+      </div>
+      <div class="nav-right">
+        <div class="item-right">Giời thiệu</div>
+        <div class="item-right">Hướng dẫn</div>
+        <div class="item-right">Điều khoản</div>
+        <div class="item-right">Riêng tư</div>
+        <div class="item-right">Ứng dụng</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="body">
+    <div class="body-header">
+      <div [routerLink]="['/home/MainInterface']" class="boydy-btn body-btn1">
+        Trang chủ
+      </div>
+      <div class="boydy-btn body-btn2">
+        Thong tin
+        <ul>
+          <li [routerLink]="['/home/Maintenance']" class="body-head-li">
+            Bảo hành
+          </li>
+          <li [routerLink]="['/home/Servic']" class="body-head-li">Dịch vụ</li>
+        </ul>
+      </div>
+      <div class="boydy-btn body-btn3">
+        Bảo dưỡng
+        <ul>
+          <li [routerLink]="['/home/CartListt']" class="body-head-li">
+            Danh sách xe
+          </li>
+          <li [routerLink]="['/home/Add']" class="body-head-li">Thêm xe</li>
+        </ul>
+      </div>
+      <div class="boydy-btn body-btn4">
+        Admin
+        <ul>
+          <li [routerLink]="['/home/ChangePass']" class="body-head-li">
+            Đổi mật khẩu
+          </li>
+          <li [routerLink]="['/home/AcountInfo']" class="body-head-li">
+            Đổi thông tin
+          </li>
+          <li [routerLink]="['']" class="body-head-li">Logout</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="body-main">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

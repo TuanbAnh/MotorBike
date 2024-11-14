@@ -1,0 +1,107 @@
+.main {
+  height: 89vh;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 25px;
+    background-color: hsl(0, 100%, 46%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .body {
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    padding: 0px 10px;
+    display: flex;
+    justify-content: space-between;
+    .left {
+      background-color: #e1c3c3;
+      margin-right: 30px;
+      width: 30%;
+      .profile {
+        padding: 15px 0;
+        text-align: center;
+        .avt {
+          width: 100px;
+          height: 100px;
+          border: 1px solid #000;
+          border-radius: 50%;
+        }
+        .admin {
+          font-size: 20px;
+          font-weight: bold;
+        }
+        .role {
+          padding: 10px 10px;
+          opacity: 0.8;
+        }
+      }
+
+      .details {
+        .item {
+          border-top: 1px solid #000;
+          padding: 10px;
+          display: flex;
+          justify-content: space-between;
+          .lable {
+            font-weight: 800;
+          }
+          .value {
+            color: rgb(203, 11, 11);
+          }
+        }
+      }
+    }
+
+    .right {
+      width: 70%;
+
+      .change-pass {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 10px 0px;
+      }
+      .update-pas {
+        background: #e09c9c48;
+
+        border-left: 1px solid #000;
+        border-top: 1px solid #000;
+        padding: 10px;
+
+        .item {
+          font-weight: 500;
+          color: #000000;
+          display: flex;
+          line-height: 2;
+          padding: 10px 0;
+          .label {
+            width: 200px;
+            padding-right: 10px;
+          }
+          .text {
+            width: 100%;
+          }
+        }
+        .img-pass {
+          width: 500px;
+          height: 200px;
+          background-image: url("https://phukienkendu.com/wp-content/uploads/2018/01/logo-thuan-8.png");
+          background-size: cover;
+          background-position: center;
+        }
+      }
+      button {
+        position: absolute;
+        top: 75%;
+        padding: 5px 10px;
+        font-weight: bold;
+        width: 200px;
+        left: 75%;
+      }
+    }
+  }
+}

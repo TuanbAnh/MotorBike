@@ -1,0 +1,52 @@
+.main {
+  .search {
+    display: flex;
+    justify-content: center;
+    background-image: url(/assets/cart-list-search.png);
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+
+    border: 1px solid #000;
+
+    .icon {
+      background: url("https://static.thenounproject.com/png/101791-200.png")
+        no-repeat right;
+      background-size: 20px;
+      height: 30px;
+      position: absolute;
+      top: 445px;
+      width: 50%;
+      border-radius: 10px;
+      padding: 10px;
+    }
+    button {
+      width: 70px;
+      height: 30px;
+      position: absolute;
+      top: 445px;
+      left: 72%;
+      background-color: #da4e4e00;
+      border: none;
+    }
+  }
+
+  .mt-4 {
+    left: 50%;
+    top: 440px;
+    transform: translateX(-50%);
+    position: absolute;
+    .table {
+      tr {
+        th {
+          background-color: rgb(161, 203, 250);
+        }
+      }
+      .tb {
+        td {
+          background-color: rgb(253, 254, 255);
+        }
+      }
+    }
+  }
+}
